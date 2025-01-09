@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Varela Round', sans-serif;
+    position: sticky;
+    top: 0;
+    border-bottom: 10px solid whitesmoke;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0px;
+}
+
+ul li img {
+    width: 100px;
+    padding: 0 4px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(./assets/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 3vh;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 85vw;
+    cursor: pointer;
+
+
+}
+
+.songItemsContainer {
+    margin-top: 74px;
+}
+
+.songItems {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    border-radius: 34px;
+
+}
+
+.songItems img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timeStamp {
+    margin: 0 23px;
+}
+
+.timeStamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 768px) { 
+    .container {
+        padding: 23px;
+        width: 75%;
+    }
+
+    .songItemsContainer {
+        margin-top: 23px;
+    }
+
+    .songNames {
+        font-size: 3vw;
+    }
+
+    .songItems {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .songItems img {
+        margin: 0 10px;
+        width: 30px;
+    }
+
+    .timeStamp {
+        font-size: 3vw;
+        margin: 0;
+
+    }
+
+    .songItemPlay {
+        font-size: 12px;
+    }
+
+    .icons {
+        margin-bottom: 30px;
+    }
+
+    .songInfo {
+        bottom: 10px;
+    }
+
+}
+@media only screen and (min-width: 769px){
+    nav ul{
+        height: 100px;
+    }
+    ul li img {
+        width: 200px;
+        padding: 0;
+    }
+    .brand{
+        font-size: 4vw;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    .bottom{
+        height:150px;
+        position: relative;
+        top: 30px;
+    }
+    .songItemsContainer{
+        margin-top: 30px;
+    }
+    .songItems{
+        margin: 15px 0;
+        padding: 15px;
+    }
+    .songItems img {
+        margin: 0 10px;
+        width: 70px;
+    }
+    .songNames {
+        font-size: 3vw;
+    }
+    .timeStamp {
+        font-size: 3vw;
+        margin: 0;
+
+    }
+    .icons{
+        margin-bottom: 35px;
+    }
+    .center{
+        font-size: 4vw;
+        position: relative;
+        top: 50px;
+        left: 100px;
+    }
+    #gif{
+        width: 75px;
+    }
+}
+@media only screen and (min-width: 1081px){
+    .brand{
+        font-size: 2vw;
+    }
+    h1{
+        font-size: 2vw;
+    }
+    .songItems{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 70%;
+    }
+    .songItems img{
+        width: 50px;
+    }
+    .songNames{
+        font-size: 1vw;
+    }
+    .timeStamp{
+        font-size: 1vw;
+    }
+   .bottom{
+    position: relative;
+    height: 175px;
+   }
+   .center{
+    font-size: 2vw;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+}
